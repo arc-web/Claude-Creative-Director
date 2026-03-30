@@ -1,0 +1,76 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "name": "Edit Scope Isolation",
+      "template": "Edit ONLY [TARGET_OBJECT]. Preserve [ALL_NON_TARGET_ELEMENTS] with zero deviation.",
+      "variables": ["TARGET_OBJECT", "ALL_NON_TARGET_ELEMENTS"]
+    },
+    {
+      "id": 2,
+      "name": "Spatial Anchoring",
+      "template": "Maintain exact position, scale, rotation, perspective, and bounding box footprint. The replacement must align perfectly to the original silhouette.",
+      "variables": ["POSITION", "SCALE", "ROTATION", "PERSPECTIVE"]
+    },
+    {
+      "id": 3,
+      "name": "Geometry + Optics",
+      "template": "Preserve original camera angle, perspective, depth of field, motion blur (if present). No distortion or flattening.",
+      "variables": ["CAMERA_ANGLE", "DEPTH_OF_FIELD", "MOTION_BLUR"]
+    },
+    {
+      "id": 4,
+      "name": "Lighting + Material Fidelity",
+      "template": "Match original lighting: direction [DIRECTION], intensity [INTENSITY], reflections [REFLECTIONS], specular highlights [HIGHLIGHTS], shadow softness [SHADOW_SOFTNESS], environmental color bleed [COLOR_BLEED].",
+      "variables": ["DIRECTION", "INTENSITY", "REFLECTIONS", "HIGHLIGHTS", "SHADOW_SOFTNESS", "COLOR_BLEED"]
+    },
+    {
+      "id": 5,
+      "name": "Environmental Interaction",
+      "template": "Preserve all object interactions: occlusions, overlapping effects (light streaks, glow, particles), transparency. Ensure effects pass through/around object identically.",
+      "variables": ["OCCLUSIONS", "OVERLAPPING_EFFECTS", "TRANSPARENCY"]
+    },
+    {
+      "id": 6,
+      "name": "Structural Parity",
+      "template": "Preserve internal structure/layout. Only modify stylistic layer: [STYLE_CHANGES]. Prevent layout drift.",
+      "variables": ["STYLE_CHANGES"]
+    },
+    {
+      "id": 7,
+      "name": "Identity Replacement",
+      "template": "Remove: [REMOVE_MARKERS]. Apply: [APPLY_MARKERS]. Avoid hybrid artifacts or mixed design languages.",
+      "variables": ["REMOVE_MARKERS", "APPLY_MARKERS"]
+    },
+    {
+      "id": 8,
+      "name": "Negative Constraints",
+      "template": "Do NOT alter: [DO_NOT_ALTER]. Do NOT introduce: [DO_NOT_INTRODUCE].",
+      "variables": ["DO_NOT_ALTER", "DO_NOT_INTRODUCE"]
+    },
+    {
+      "id": 9,
+      "name": "Pixel Fidelity",
+      "template": "Ensure pixel-perfect preservation outside edited region. Zero deviation globally except target object.",
+      "variables": []
+    },
+    {
+      "id": 10,
+      "name": "Photorealism",
+      "template": "Seamless, photorealistic integration. No visible edit seams or AI artifacts.",
+      "variables": []
+    },
+    {
+      "id": 11,
+      "name": "Consistency Pass",
+      "template": "Match grain/noise, sharpness, edge blending. Ensure uniformity across entire image.",
+      "variables": []
+    },
+    {
+      "id": 12,
+      "name": "Output Quality Threshold",
+      "template": "Final image must be indistinguishable from original except for: [TARGET_CHANGE]. Production-grade realism.",
+      "variables": ["TARGET_CHANGE"]
+    }
+  ]
+}
