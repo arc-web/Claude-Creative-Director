@@ -133,90 +133,185 @@ blockquote::before { content:'\201C'; position:absolute; left:0; top:-10px; font
 <div id="slides">
 <div class="slide active" id="slide-1">
     
-    <div class="blob" style="width:416.8967457800941px;height:574.2553661677534px;background:var(--primary);top:-152.24478891203796px;left:-119.74271744778952px;opacity:0.07"></div>
-    <div class="blob" style="width:434.80897480437557px;height:308.94550846579324px;background:var(--accent);bottom:-89.61314384996622px;right:-61.816791785900264px;opacity:0.06"></div>
+    <div class="blob" style="width:433.80357094508315px;height:575.4406049159159px;background:var(--primary);top:-113.03950914839504px;right:-87.24346755813409px;opacity:0.07"></div>
+    <div class="blob" style="width:359.07241433333274px;height:375.2286773567576px;background:var(--accent);bottom:-110.12172598605753px;left:-46.87361943982188px;opacity:0.06"></div>
     <div class="slide-content">
       <div class="hero-badge">ARC Web</div>
-      <h1>Claude Creative Director<br><span class="grad">Image Orchestration</span></h1>
-      <div class="sub">AI-powered image editing orchestrator — optimize prompts, run generations, quality-check results automatically.</div>
-      <div class="tags-row"><span class="tag">JavaScript</span><span class="tag">Image Generation</span><span class="tag">Open Source</span></div>
+      <h1>Claude Creative Director<br><span class="grad">JavaScript</span></h1>
+      <div class="sub"><a href="https://arc-web.github.io/Claude-Creative-Director/"></div>
+      <div class="tags-row"><span class="tag">JavaScript</span><span class="tag">Open Source</span></div>
     </div>
   </div>
 
 <div class="slide" id="slide-2">
     
-    <div class="blob" style="width:588.7151559444526px;height:537.6506516826106px;background:var(--primary);top:-159.43673847443318px;right:-65.30776513117459px;opacity:0.07"></div>
-    <div class="blob" style="width:379.27819719001366px;height:307.3110332878476px;background:var(--accent);bottom:-90.54398086098143px;right:-40.06042777885622px;opacity:0.06"></div>
+    <div class="blob" style="width:403.23843138848224px;height:486.05166096164226px;background:var(--primary);top:-151.92838237326998px;right:-103.58094400620914px;opacity:0.07"></div>
+    <div class="blob" style="width:332.1790566235895px;height:349.4974110772378px;background:var(--accent);bottom:-63.10816838816324px;left:-59.922631294100746px;opacity:0.06"></div>
     <div class="slide-content">
-      <div class="eyebrow">What it does</div>
-      <h2>Full creative <span class="grad">pipeline</span></h2>
+      <div class="eyebrow">The problem</div>
+      <h2>What's <span class="grad">broken</span> without this</h2>
       <div class="line"></div>
       <div class="cards">
     <div class="card">
-      <span class="card-icon">✨</span>
-      <div class="card-title">Prompt optimization</div>
-      <div class="card-desc">Enhance vague prompts into detailed, specific instructions for image generators.</div>
+      <span class="card-icon">🎯</span>
+      <div class="card-title">Prompt drift across edits</div>
+      <div class="card-desc">Generative models produce inconsistent results when you make sequential edits without explicit constraints, breaking visual coherence.</div>
     </div>
     <div class="card">
-      <span class="card-icon">🎨</span>
-      <div class="card-title">Batch generation</div>
-      <div class="card-desc">Generate multiple variations of the same concept in parallel.</div>
+      <span class="card-icon">⏱️</span>
+      <div class="card-title">Manual prompt engineering</div>
+      <div class="card-desc">Writing detailed, constraint-aware prompts for each image edit requires domain expertise and takes minutes per iteration.</div>
     </div>
     <div class="card">
-      <span class="card-icon">🔍</span>
-      <div class="card-title">Quality assessment</div>
-      <div class="card-desc">Auto-validate images against your rules — reject low-quality outputs instantly.</div>
-    </div>
-    <div class="card">
-      <span class="card-icon">📊</span>
-      <div class="card-title">Result management</div>
-      <div class="card-desc">Organize, tag, and manage your generated image library.</div>
+      <span class="card-icon">🚫</span>
+      <div class="card-title">Unintended model behaviors</div>
+      <div class="card-desc">Image models hallucinate unwanted details or ignore spatial/stylistic requirements without a structured rule framework.</div>
     </div></div>
     </div>
   </div>
 
 <div class="slide" id="slide-3">
     
-    <div class="blob" style="width:597.3042698062004px;height:590.0136247133512px;background:var(--primary);top:-156.41075116475565px;right:-83.23549758963826px;opacity:0.07"></div>
-    <div class="blob" style="width:353.0203640613139px;height:421.0796708227974px;background:var(--accent);bottom:-89.21912604337132px;right:-70.78572157024428px;opacity:0.06"></div>
+    <div class="blob" style="width:452.3150165152954px;height:579.1426621591221px;background:var(--primary);top:-95.80997069078354px;right:-65.44125740657817px;opacity:0.07"></div>
+    <div class="blob" style="width:402.8297682419774px;height:316.30362222946906px;background:var(--accent);bottom:-75.62845917440431px;left:-41.812756611179495px;opacity:0.06"></div>
     <div class="slide-content">
-      <div class="eyebrow">Get started</div>
-      <h2>Generate images <span class="grad">at scale</span></h2>
+      <div class="eyebrow">The difference</div>
+      <h2>Why it <span class="grad">matters</span></h2>
       
-      <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-text"><strong>Provide a concept</strong> - Describe what you want in simple terms.</div>
+      <div class="compare">
+        <div class="compare-col bad">
+      <div class="compare-head"><span class="cross">✗</span> Without</div>
+      <div class="compare-item">Manual work</div><div class="compare-item">Slow iteration</div><div class="compare-item">Repeated mistakes</div>
     </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-text"><strong>Define quality rules</strong> - What makes a good image? Color, composition, style?</div>
+        <div class="compare-col good">
+      <div class="compare-head"><span class="check">✓</span> With this</div>
+      <div class="compare-item">12-point constraint rule set prevents hallucination and drift</div><div class="compare-item">Converts high-level edit intents into production-ready prompts automatically</div><div class="compare-item">Tracks spatial rules (position, scale, lighting) explicitly in prompt structure</div>
     </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-text"><strong>Let it run</strong> - Creative Director optimizes prompts, generates variations, quality-checks results.</div>
-    </div>
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-text"><strong>Review winners</strong> - Only see images that passed your standards.</div>
-    </div></div>
+      </div>
     </div>
   </div>
 
 <div class="slide" id="slide-4">
     
-    <div class="blob" style="width:534.146787834127px;height:549.3712858775887px;background:var(--primary);top:-149.11426341840436px;left:-99.33343815043565px;opacity:0.07"></div>
-    <div class="blob" style="width:346.25590429725474px;height:371.8887551392305px;background:var(--accent);bottom:-103.53396574030143px;right:-52.455213516317166px;opacity:0.06"></div>
+    <div class="blob" style="width:418.00705866304236px;height:480.557143272904px;background:var(--primary);top:-112.85777185888335px;left:-74.45842299462088px;opacity:0.07"></div>
+    <div class="blob" style="width:384.8538090958004px;height:323.46583344700235px;background:var(--accent);bottom:-92.63049747491704px;right:-77.93926294517811px;opacity:0.06"></div>
     <div class="slide-content">
-      <blockquote>Great images don't need <span class="grad">human tweaking</span> of prompts. Creative Director does it <span class="grad">automatically</span>.</blockquote>
+      <div class="eyebrow">Under the hood</div>
+      <h2>How it <span class="grad">works</span></h2>
+      
+      <div class="flow">
+    <div class="flow-step">
+      <div class="flow-icon" style="background:rgba(123,47,190,0.12);border:1px solid rgba(123,47,190,0.2)">📥</div>
+      <div class="flow-body">
+        <div class="flow-title">Define edit intent + constraints</div>
+        <div class="flow-desc">You specify the target object, edit type (device swap, style transfer, etc.), elements to preserve, and spatial/lighting rules.</div>
+        
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-icon" style="background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.2)">⚙️</div>
+      <div class="flow-body">
+        <div class="flow-title">Apply 12-point constraint rule set</div>
+        <div class="flow-desc">The prompt builder evaluates your intent against rules for composition, lighting, interactions, and forbidden elements, then synthesizes a detailed prompt.</div>
+        
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-icon" style="background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.2)">🎬</div>
+      <div class="flow-body">
+        <div class="flow-title">Send to Replicate API</div>
+        <div class="flow-desc">The optimized prompt is sent to a generative image model, which produces an edited image respecting all specified constraints.</div>
+        
+      </div>
+    </div></div>
+    </div>
+  </div>
+
+<div class="slide" id="slide-5">
+    
+    <div class="blob" style="width:416.0884263353153px;height:460.41018171642526px;background:var(--primary);top:-118.14619197824805px;right:-117.00205740601109px;opacity:0.07"></div>
+    <div class="blob" style="width:412.36202680733624px;height:393.7798784801807px;background:var(--accent);bottom:-78.58854041912136px;right:-45.09949335584326px;opacity:0.06"></div>
+    <div class="slide-content">
+      <div class="eyebrow">What it does</div>
+      <h2>Core <span class="grad">capabilities</span></h2>
+      <div class="line"></div>
+      <div class="cards">
+    <div class="card">
+      <span class="card-icon">⚡</span>
+      <div class="card-title">Fast</div>
+      <div class="card-desc">Optimized for speed and efficiency.</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🎯</span>
+      <div class="card-title">Reliable</div>
+      <div class="card-desc">Built to work consistently.</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🔌</span>
+      <div class="card-title">Integrates</div>
+      <div class="card-desc">Works with your existing tools.</div>
+    </div></div>
+    </div>
+  </div>
+
+<div class="slide" id="slide-6">
+    
+    <div class="blob" style="width:418.7972325477331px;height:508.39878790301555px;background:var(--primary);top:-90.57044696475792px;right:-69.41018730322722px;opacity:0.07"></div>
+    <div class="blob" style="width:385.9500865743099px;height:426.12246444886796px;background:var(--accent);bottom:-117.79766821539904px;right:-58.15018559564479px;opacity:0.06"></div>
+    <div class="slide-content">
+      <blockquote>Instead of rewriting prompts for every edit, you define constraints once and the system generates consistent, rule-compliant prompts for each variation.</blockquote>
       <div class="line" style="margin-top:48px"></div>
       <div class="sub">arc-web/Claude-Creative-Director</div>
+    </div>
+  </div>
+
+<div class="slide" id="slide-7">
+    
+    <div class="blob" style="width:592.785043737682px;height:429.96634586654636px;background:var(--primary);top:-94.60702889233823px;left:-63.787535493626535px;opacity:0.07"></div>
+    <div class="blob" style="width:432.83627827893724px;height:301.5024472065928px;background:var(--accent);bottom:-68.17433424588144px;left:-76.04461721277315px;opacity:0.06"></div>
+    <div class="slide-content">
+      <div class="eyebrow">Codebase</div>
+      <h2>Built with <span class="grad">care</span></h2>
+      <div class="line"></div>
+      <div class="cards">
+    <div class="card">
+      <span class="card-icon">💻</span>
+      <div class="card-title">JavaScript</div>
+      <div class="card-desc">Built in JavaScript for type safety and reliability.</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🏗️</span>
+      <div class="card-title">Architecture</div>
+      <div class="card-desc">SDK/Library</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">📦</span>
+      <div class="card-title">Key deps</div>
+      <div class="card-desc">dotenv, replicate, eslint</div>
+    </div>
+    <div class="card">
+      <span class="card-icon">🔓</span>
+      <div class="card-title">Open Source (MIT / PolyForm)</div>
+      <div class="card-desc">Fork it, extend it, ship it. It's yours.</div>
+    </div></div>
+    </div>
+  </div>
+
+<div class="slide" id="slide-8">
+    
+    <div class="blob" style="width:436.4172242523202px;height:481.99900694006783px;background:var(--primary);top:-124.50879842128745px;left:-101.46093049000987px;opacity:0.07"></div>
+    <div class="blob" style="width:336.3742863903535px;height:308.52219167684797px;background:var(--accent);bottom:-103.57642319369317px;left:-73.17384688951708px;opacity:0.06"></div>
+    <div class="slide-content">
+      <div class="eyebrow">Built by</div>
+      <h2>Mike Ensor<br><span class="grad">Arc Web</span></h2>
+      <div class="sub">AI automation, marketing technology, building tools that work.</div>
+      <div class="body-text">Mike builds open-source AI tools for agencies, marketers, and operators who are done waiting for software to catch up. All Arc Web projects are open source by default — fork them, extend them, ship them.</div>
     </div>
   </div>
 </div>
 
 <div id="nav"></div>
-<div id="counter">1 / 4</div>
+<div id="counter">1 / 8</div>
 <div id="hint">\u2190 \u2192 arrow keys to navigate</div>
 
 <script>
