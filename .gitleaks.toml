@@ -1,0 +1,39 @@
+
+title = "Custom GitHub Agent Security Scan"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "company-api-key"
+description = "Company API Key"
+regex = '''COMP_[A-Z0-9]{40}'''
+keywords = ["COMP_"]
+tags = ["company", "api"]
+
+[[rules]]
+id = "slack-token"
+description = "Slack API Token"
+regex = '''xox[baprs]-[0-9]{10,12}-[0-9]{10,12}-[a-zA-Z0-9]{24}'''
+keywords = ["xoxb", "xoxp", "xoxa", "xoxr", "xoxs"]
+tags = ["slack", "token"]
+
+[[rules]]
+id = "stripe-secret"
+description = "Stripe Secret Key"
+regex = '''sk_(test|live)_[0-9a-zA-Z]{24}'''
+keywords = ["sk_test", "sk_live"]
+tags = ["stripe", "secret"]
+
+[[rules]]
+id = "supabase-key"
+description = "Supabase API Key"
+regex = '''[a-zA-Z0-9_-]{20,200}'''
+path = '''.*supabase.*'''
+keywords = ["supabase"]
+tags = ["supabase", "api"]
+
+# Allowlist for false positives
+[[rules.allowlists]]
+description = "Allow test files"
+path = '''.*test.*'''
